@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Congratulations — A Graduation Gift</title>
+<meta name="description" content="A personal graduation gift, memory book and achievement portfolio.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+
+<link rel="stylesheet" href="style (1).css">
+</head>
+<body>
+
+<!-- Ambient background layer -->
+<div class="ambient" aria-hidden="true">
+  <div class="blob blob-blue"></div>
+  <div class="blob blob-pink"></div>
+  <div class="blob blob-red"></div>
+  <div class="stars" id="stars"></div>
+</div>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-brand"><i class="ph ph-graduation-cap"></i><span>Ms Zareena</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#gift" class="nav-link">Message</a>
+      <a href="#journey" class="nav-link">Journey</a>
+      <a href="#results" class="nav-link">Results</a>
+      <a href="#achievements" class="nav-link">Achievements</a>
+      <a href="#memories" class="nav-link">Memories</a>
+      <a href="#future" class="nav-link">Future</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= HERO ================= -->
+<section id="home" class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <img src="WhatsApp Image 2026-08-15 at 6.51.00 AM.jpeg" alt="" id="heroBgImg">
+    <div class="hero-bg-overlay"></div>
+  </div>
+  <div class="hero-floats" aria-hidden="true">
+    <i class="ph ph-graduation-cap float-icon fi-cap"></i>
+    <i class="ph ph-star float-icon fi-star1"></i>
+    <i class="ph ph-sparkle float-icon fi-sparkle1"></i>
+    <i class="ph ph-heart float-icon fi-heart1"></i>
+    <i class="ph ph-star float-icon fi-star2"></i>
+    <i class="ph ph-sparkle float-icon fi-sparkle2"></i>
+  </div>
+
+  <div class="hero-content">
+    <p class="eyebrow reveal">Class of <span id="heroYear">[YEAR]</span></p>
+    <h1 class="hero-title reveal">Congratulations,<br><span class="gradient-text" id="heroName">[HER NAME]</span> <span class="emoji">🎓</span></h1>
+    <p class="hero-subtitle reveal">You did it. One chapter has ended, and a beautiful new journey begins.</p>
+    <div class="hero-actions reveal">
+      <a href="#journey" class="btn btn-primary ripple"><i class="ph ph-sparkle"></i> Explore Ur Journey</a>
+      <a href="#gift" class="btn btn-ghost ripple"><i class="ph ph-envelope-simple"></i> Open Your Special Message</a>
+    </div>
+  </div>
+
+  <a href="#gift" class="scroll-cue" aria-label="Scroll to explore">
+    <span>Scroll to explore</span>
+    <i class="ph ph-caret-down"></i>
+  </a>
+</section>
+
+<!-- ================= GIFT / MESSAGE ================= -->
+<section id="gift" class="section gift-section">
+  <div class="section-inner">
+    <p class="eyebrow reveal">A little gift for you</p>
+    <h2 class="section-title reveal">This one's just for you <span class="emoji">💌</span></h2>
+
+    <div class="gift-stage reveal">
+      <div class="envelope-wrap" id="envelopeWrap">
+        <button class="envelope-btn" id="envelopeBtn" aria-expanded="false">
+          <span class="envelope" id="envelope">
+            <i class="ph ph-envelope-simple-open envelope-icon"></i>
+            <span class="envelope-flap"></span>
+          </span>
+          <span class="envelope-label">Open Your Special Message</span>
+        </button>
+
+        <div class="hearts-burst" id="heartsBurst" aria-hidden="true"></div>
+
+        <div class="message-card" id="messageCard" aria-live="polite">
+          <div class="message-photo">
+            <img src="IMG-20260428-WA0006.jpg" alt="A photo to go with the message" id="messagePhotoImg" loading="lazy">
+            <div class="message-photo-fallback" id="messagePhotoFallback"><i class="ph ph-image"></i><span>Add images/message-photo.jpg</span></div>
+          </div>
+          <div class="message-body">
+            <i class="ph ph-quotes quote-icon"></i>
+            <p class="message-text" id="messageText">Today is more than a result. It is a reminder of how far you have come. Congratulations on completing this chapter of your life. May everything ahead of you be even more beautiful.</p>
+            <span class="message-sign">With love and pride ✨</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROFILE ================= -->
+<section id="profile" class="section profile-section">
+  <div class="section-inner profile-grid">
+    <div class="profile-photo-wrap reveal">
+      <div class="profile-photo">
+        <img src="WhatsApp Image 2026-08-15 at 8.09.24 AM (1).jpeg" alt="Graduate portrait" id="profileImg" loading="lazy">
+        <div class="profile-photo-fallback" id="profileFallback"><i class="ph ph-graduation-cap"></i></div>
+      </div>
+      <div class="profile-glow-ring" aria-hidden="true"></div>
+    </div>
+
+    <div class="profile-info reveal">
+      <p class="eyebrow">Graduation Profile</p>
+      <h2 class="section-title" id="profileName">[HER NAME]</h2>
+      <p class="profile-bio" id="profileBio">A curious mind, a kind heart, and a determination that carried your through every exam, every late night, and every proud moment. This is your story, told one chapter at a time.</p>
+
+      <ul class="profile-facts">
+        <li><i class="ph ph-chalkboard-teacher"></i><span><strong>School</strong><em id="profileSchool">[SCHOOL NAME]</em></span></li>
+        <li><i class="ph ph-calendar-blank"></i><span><strong>Graduation Year</strong><em id="profileYear">[YEAR]</em></span></li>
+        <li><i class="ph ph-book-open"></i><span><strong>Favorite Subject</strong><em id="profileSubject">[FAVORITE SUBJECT]</em></span></li>
+        <li><i class="ph ph-trophy"></i><span><strong>Achievement</strong><em id="profileAchievement">[ACHIEVEMENT SUMMARY]</em></span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= JOURNEY / TIMELINE ================= -->
+<section id="journey" class="section journey-section">
+  <div class="section-inner">
+    <p class="eyebrow reveal">ur story, step by step</p>
+    <h2 class="section-title reveal">Her Journey</h2>
+
+    <div class="timeline" id="timeline">
+      <div class="timeline-line" aria-hidden="true"><span class="timeline-line-fill" id="timelineFill"></span></div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"><i class="ph ph-flag"></i></div>
+        <div class="timeline-card">
+          <span class="timeline-tag">Beginning</span>
+          <h3>Where it all started</h3>
+          <p>your very first day of school small steps that were the beginning of something big.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"><i class="ph ph-plant"></i></div>
+        <div class="timeline-card">
+          <span class="timeline-tag">Growth</span>
+          <h3>Learning who she is</h3>
+          <p>Years of showing up, growing in confidence, and discovering the subjects and passions that shaped u.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"><i class="ph ph-medal"></i></div>
+        <div class="timeline-card">
+          <span class="timeline-tag">Achievements</span>
+          <h3>Proving it to herself</h3>
+          <p>Certificates earned, activities joined, and quiet accomplishments that added up to something remarkable.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"><i class="ph ph-graduation-cap"></i></div>
+        <div class="timeline-card">
+          <span class="timeline-tag">Graduation</span>
+          <h3>The chapter closes</h3>
+          <p>School is complete, results are in, and a whole new story is ready to be written.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESULTS ================= -->
+<section id="results" class="section results-section">
+  <div class="section-inner">
+    <p class="eyebrow reveal">The moment it all led to</p>
+    <h2 class="section-title reveal">The Result <span class="emoji">🏆</span></h2>
+
+    <div class="results-grid" id="resultsGrid">
+      <div class="result-card reveal">
+        <div class="result-card-top"><i class="ph ph-translate"></i><span class="result-subject">Arabic</span></div>
+        <div class="result-badge" data-grade="90">[B-]</div>
+        <div class="result-bar"><span style="--val:0%" data-target="90%"></span></div>
+      </div>
+      <div class="result-card reveal">
+        <div class="result-card-top"><i class="ph ph-chats-circle"></i><span class="result-subject">Somali</span></div>
+        <div class="result-badge" data-grade="90">[F]</div>
+        <div class="result-bar"><span style="--val:0%" data-target="88%"></span></div>
+      </div>
+      <div class="result-card reveal">
+        <div class="result-card-top"><i class="ph ph-globe-hemisphere-west"></i><span class="result-subject">Geography</span></div>
+        <div class="result-badge" data-grade="90">[B+]</div>
+        <div class="result-bar"><span style="--val:0%" data-target="92%"></span></div>
+      </div>
+      <div class="result-card reveal">
+        <div class="result-card-top"><i class="ph ph-scroll"></i><span class="result-subject">History</span></div>
+        <div class="result-badge" data-grade="90">[B+]</div>
+        <div class="result-bar"><span style="--val:0%" data-target="85%"></span></div>
+      </div>
+      <div class="result-card reveal">
+        <div class="result-card-top"><i class="ph ph-cpu"></i><span class="result-subject">Technology</span></div>
+        <div class="result-badge" data-grade="90">[B+]</div>
+        <div class="result-bar"><span style="--val:0%" data-target="87%"></span></div>
+      </div>
+      <div class="result-card reveal">
+        <div class="result-card-top"><i class="ph ph-briefcase"></i><span class="result-subject">Business</span></div>
+        <div class="result-badge" data-grade="90">[B+]</div>
+        <div class="result-bar"><span style="--val:0%" data-target="89%"></span></div>
+      </div>
+      <div class="result-card reveal">
+        <div class="result-card-top"><i class="ph ph-moon-stars"></i><span class="result-subject">Islamic Studies</span></div>
+        <div class="result-badge" data-grade="90">[B+]</div>
+        <div class="result-bar"><span style="--val:0%" data-target="94%"></span></div>
+      </div>
+    </div>
+
+    <div class="overall-result reveal">
+      <i class="ph ph-trophy overall-trophy"></i>
+      <div>
+        <span class="overall-label">Overall Result</span>
+        <span class="overall-value" id="overallResul">[B+(PASSED)]</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ACHIEVEMENTS ================= -->
+<section id="achievements" class="section achievements-section">
+  <div class="section-inner">
+    <p class="eyebrow reveal">Every step counted</p>
+    <h2 class="section-title reveal">Achievements <span class="emoji">🌟</span></h2>
+
+    <div class="achievements-grid">
+      <div class="achieve-card reveal">
+        <div class="achieve-photo">
+          <img src="gra.jpg" alt="Graduation" loading="lazy">
+          <div class="achieve-photo-fallback"><i class="ph ph-image"></i></div>
+        </div>
+        <div class="achieve-icon"><i class="ph ph-graduation-cap"></i></div>
+        <div class="achieve-body">
+          <h3>Graduation</h3>
+          <p>Successfully completed ur final year with dedication and heart.</p>
+          <span class="achieve-date">[DATE]</span>
+        </div>
+      </div>
+      <div class="achieve-card reveal">
+        <div class="achieve-photo">
+          <img src="WhatsApp Image 2026-08-15 at 8.09.24 AM (2).jpeg" alt="Academic Excellence" loading="lazy">
+          <div class="achieve-photo-fallback"><i class="ph ph-image"></i></div>
+        </div>
+        <div class="achieve-icon"><i class="ph ph-star"></i></div>
+        <div class="achieve-body">
+          <h3>Academic Excellence</h3>
+          <p>Consistently strong performance across ur core subjects.</p>
+          <span class="achieve-date">[2026]</span>
+        </div>
+      </div>
+      <div class="achieve-card reveal">
+        <div class="achieve-photo">
+          <img src="certificate.jpg" alt="Certificates Earned" loading="lazy">
+          <div class="achieve-photo-fallback"><i class="ph ph-image"></i></div>
+        </div>
+        <div class="achieve-icon"><i class="ph ph-medal"></i></div>
+        <div class="achieve-body">
+          <h3>Certificates Earned</h3>
+          <p>Recognition for effort, skill, and consistency inside the classroom.</p>
+          <span class="achieve-date">[2026]</span>
+        </div>
+      </div>
+      <div class="achieve-card reveal">
+        <div class="achieve-photo">
+          <img src="SCHOOL ACT.jpg" alt="School Activities" loading="lazy">
+          <div class="achieve-photo-fallback"><i class="ph ph-image"></i></div>
+        </div>
+        <div class="achieve-icon"><i class="ph ph-users-three"></i></div>
+        <div class="achieve-body">
+          <h3>School Activities</h3>
+          <p>An active part of school life — clubs, events, and shared moments.</p>
+          <span class="achieve-date">[2025]</span>
+        </div>
+      </div>
+      <div class="achieve-card reveal">
+        <div class="achieve-photo">
+          <img src="SCHOOL ACT.jpg" alt="Leadership" loading="lazy">
+          <div class="achieve-photo-fallback"><i class="ph ph-image"></i></div>
+        </div>
+        <div class="achieve-icon"><i class="ph ph-crown"></i></div>
+        <div class="achieve-body">
+          <h3>Leadership</h3>
+          <p>Stepped up when it mattered and helped guide those around her.</p>
+          <span class="achieve-date">[2025]</span>
+        </div>
+      </div>
+      <div class="achieve-card reveal">
+        <div class="achieve-photo">
+          <img src="WhatsApp Image 2026-08-15 at 8.13.19 AM.jpeg" alt="Special Award" loading="lazy">
+          <div class="achieve-photo-fallback"><i class="ph ph-image"></i></div>
+        </div>
+        <div cla ss="achieve-icon"><i class="ph ph-medal-military"></i></div>
+        <div class="achieve-body">
+          <h3>Special Award</h3>
+          <p>A moment singled out as truly special among the rest.</p>
+          <span class="achieve-date">[2025]</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MEMORIES GALLERY ================= -->
+<section id="memories" class="section memories-section">
+  <div class="section-inner">
+    <p class="eyebrow reveal">A visual memory book</p>
+    <h2 class="section-title reveal">Beautiful Memories <span class="emoji">📸</span></h2>
+    <p class="section-subtitle reveal">Some moments become memories. Some memories become forever.</p>
+
+    <div class="gallery" id="gallery"></div>
+
+    <div class="gallery-outro reveal">
+      <p>15 memories, one beautiful journey.</p>
+      <p class="gallery-outro-sub">And the best memories are still ahead. <span class="emoji">🎓✨</span></p>
+      <a href="#future" class="btn btn-primary ripple">Continue Her Journey <i class="ph ph-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Memory viewer">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close"><i class="ph ph-x"></i></button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous photo"><i class="ph ph-caret-left"></i></button>
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next photo"><i class="ph ph-caret-right"></i></button>
+  <div class="lightbox-stage">
+    <div class="lightbox-imgwrap" id="lightboxImgWrap"></div>
+    <div class="lightbox-caption">
+      <h3 id="lightboxTitle"></h3>
+      <span id="lightboxCounter"></span>
+    </div>
+  </div>
+</div>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="section skills-section">
+  <div class="section-inner">
+    <p class="eyebrow reveal">Beyond the grades</p>
+    <h2 class="section-title reveal">What  you Learned <span class="emoji">💡</span></h2>
+
+    <div class="skills-grid" id="skillsGrid">
+      <div class="skill reveal" data-target="92"><div class="skill-top"><span>Communication</span><span class="skill-pct">0%</span></div><div class="skill-track"><span class="skill-fill"></span></div></div>
+      <div class="skill reveal" data-target="88"><div class="skill-top"><span>Leadership</span><span class="skill-pct">0%</span></div><div class="skill-track"><span class="skill-fill"></span></div></div>
+      <div class="skill reveal" data-target="95"><div class="skill-top"><span>Teamwork</span><span class="skill-pct">0%</span></div><div class="skill-track"><span class="skill-fill"></span></div></div>
+      <div class="skill reveal" data-target="90"><div class="skill-top"><span>Creativity</span><span class="skill-pct">0%</span></div><div class="skill-track"><span class="skill-fill"></span></div></div>
+      <div class="skill reveal" data-target="93"><div class="skill-top"><span>Problem Solving</span><span class="skill-pct">0%</span></div><div class="skill-track"><span class="skill-fill"></span></div></div>
+      <div class="skill reveal" data-target="97"><div class="skill-top"><span>Discipline</span><span class="skill-pct">0%</span></div><div class="skill-track"><span class="skill-fill"></span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FUTURE GOALS ================= -->
+<section id="future" class="section future-section">
+  <div class="section-inner">
+    <p class="eyebrow reveal">The next chapter</p>
+    <h2 class="section-title reveal">What's Next? <span class="emoji">🚀</span></h2>
+
+    <div class="future-grid">
+      <div class="future-card reveal">
+        <i class="ph ph-bank"></i>
+        <h3>University</h3>
+        <p>[UMADA UNIVERSITY / NEXT STEP]</p>
+      </div>
+      <div class="future-card reveal">
+        <i class="ph ph-briefcase"></i>
+        <h3>Career</h3>
+        <p>[SOCIAL WORK]</p>
+      </div>
+      <div class="future-card reveal">
+        <i class="ph ph-brain"></i>
+        <h3>Skills</h3>
+        <p>[CORCHET]</p>
+      </div>
+      <div class="future-card reveal">
+        <i class="ph ph-moon-stars"></i>
+        <h3>Dreams</h3>
+        <p>[RICH]</p>
+      </div>
+      <div class="future-card reveal">
+        <i class="ph ph-target"></i>
+        <h3>Personal Goals</h3>
+        <p>[social]</p>
+      </div>
+    </div>
+
+    <p class="future-quote reveal">"The best chapter is the one you are about to write."</p>
+  </div>
+</section>
+
+<!-- ================= FINAL ================= -->
+<section id="final" class="section final-section">
+  <div class="section-inner final-inner">
+    <i class="ph ph-heart final-heart reveal"></i>
+    <h2 class="final-title reveal">This Is Only The Beginning</h2>
+    <p class="final-name reveal">Congratulations, <span id="finalName">[HER NAME]</span>.</p>
+    <p class="final-quote reveal">Your school journey may be over, but your story is just beginning.</p>
+    <button class="btn btn-primary ripple" id="replayBtn">Replay ur Journey <i class="ph ph-sparkle"></i></button>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>Made with <i class="ph ph-heart footer-heart"></i> for your graduation day.</p>
+</footer>
+
+<script src="script (1).js"></script>
+</body>
+</html>
